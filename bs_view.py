@@ -1,3 +1,4 @@
+
 def show_menu():
     print()
     print("Welcome to Battleships !")
@@ -23,7 +24,7 @@ def get_input():
 
 def get_attack_details(param):
     print()
-    print("Your ", param, " choice, pls enter 1-5: ", end="")
+    print("Pls enter", param, "co-ordinate (1-5): ", end="")
     return input()
 
 def get_congrats_msg():
@@ -36,7 +37,7 @@ def get_board_details(attack_response):
     for row in attack_response:
         print((" ".join(row)))
     print()
-    print("Jolly bad luck old chap, have another pop !")
+    print("Jolly bad luck old chap, reload and retry !")
     print()
     
     

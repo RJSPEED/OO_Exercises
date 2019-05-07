@@ -1,16 +1,13 @@
+
 from random import randint
 
 class Gameboard:
 
-    #Class attributes
-    
-    #def __init__(self, rows_list=[], ship_row="", ship_col=""):
     def __init__(self):
-        # populate self.attributes for a bank account
         self.rows_list = []
         self.ship_row = randint(1,5)
         self.ship_col = randint(1,5)
-        print("Ship row = ", self.ship_row, ", Ship col = ", self.ship_col)
+        print("FOR TEST: Ship row = ", self.ship_row, ", Ship col = ", self.ship_col)
         for i in range(5):
             self.rows_list.append("-" * 5)
 
